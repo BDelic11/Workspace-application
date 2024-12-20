@@ -26,14 +26,17 @@ const TestimonialsSectionCard = ({
   const stars = Array.from({ length: grade }, (_, index) => index);
   return (
     <article className={styles.card}>
-      <Image
-        src={avatar}
-        width={20}
-        height={20}
-        alt={`${name} review`}
-        className={styles.cardImage}
-      />
-      <div className={styles.stars}>
+      <div className={styles.cardAvatarName}>
+        <Image
+          src={avatar}
+          width={20}
+          height={20}
+          alt={`${name} review`}
+          className={styles.cardImage}
+        />
+        <h3>{name}</h3>
+      </div>
+      <div className={styles.cardStars}>
         {stars.map((star) => (
           <Image
             key={star}
@@ -45,9 +48,11 @@ const TestimonialsSectionCard = ({
           />
         ))}
       </div>
-      <h2 className={styles.cardTitle}>{title}</h2>
-      <p>{description}</p>
-      <div className={styles.cardShadow}></div>
+      <div className={styles.cardTitleDescription}>
+        <h2 className={styles.cardTitle}>{title}</h2>
+        <p>{description}</p>
+        <div className={styles.cardShadow}></div>
+      </div>
     </article>
   );
 };

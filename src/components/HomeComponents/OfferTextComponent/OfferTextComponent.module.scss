@@ -1,0 +1,45 @@
+@import "../../../styles/global.colors.scss";
+@import "../../../styles/mixins";
+
+//DESKTOP
+@include desktop() {
+  .image {
+    width: 26px;
+    height: 26px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 322px;
+    color: $home-blue-background;
+    font-family: Poppins;
+    gap: 8px;
+
+    &Header {
+      padding: 10px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      h2 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 100% */
+      }
+    }
+    &Description {
+      height: 91px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+  }
+}
+
+//MOBILE
+@include mobile() {
+}

@@ -1,0 +1,83 @@
+@import "../../../styles/global.colors.scss";
+@import "../../../styles/mixins";
+
+//DESKTOP
+@include desktop() {
+  .payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+    &CardHeader {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      h2 {
+        color: $home-blue-background;
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 37px; /* 115.625% */
+      }
+      div {
+        display: inline-flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 5px;
+        background: #062949;
+        color: white;
+        p {
+          display: block;
+        }
+      }
+    }
+
+    &CardsContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
+
+      .checkListItemsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 12px;
+        .checkNameContainer {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 6px;
+        }
+      }
+
+      .paymentCard {
+        display: flex;
+        width: 434.802px;
+        height: 408.714px;
+        padding: 38.263px 124.354px 51.307px 59.133px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36.523px;
+        border-radius: 15px;
+        background: #fff;
+        box-shadow: 33.045px 29.567px 18.262px 0px rgba(0, 0, 0, 0),
+          18.262px 16.522px 14.783px 0px rgba(0, 0, 0, 0.02),
+          8.696px 7.826px 11.305px 0px rgba(0, 0, 0, 0.03),
+          1.739px 1.739px 6.087px 0px rgba(0, 0, 0, 0.03);
+      }
+    }
+  }
+}
+
+//MOBILE
+@include mobile() {
+}

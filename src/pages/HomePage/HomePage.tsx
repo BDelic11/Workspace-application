@@ -5,10 +5,12 @@ import styles from "./HomePage.module.scss";
 
 //components
 import HeroSection from "@/components/HomeComponents/HeroSection";
-
 import ExperienceSection from "@/components/HomeComponents/ExperienceSection/ExperienceSection";
 import RoutesSection from "@/components/HomeComponents/RoutesSection";
 import TestimonialsSection from "@/components/HomeComponents/TestimonialsSection";
+import WhatWeOfferSection from "@/components/HomeComponents/WhatWeOfferSection";
+import FlexiblePaymentSection from "@/components/HomeComponents/FlexiblePaymentSection";
+import PaymentSection from "@/components/HomeComponents/PaymentSection";
 
 export default function HomePage() {
   return (
@@ -17,6 +19,9 @@ export default function HomePage() {
       <ExperienceSection />
       <RoutesSection />
       <TestimonialsSection />
+      <WhatWeOfferSection />
+      <PaymentSection />
+      <FlexiblePaymentSection />
     </main>
   );
 }
