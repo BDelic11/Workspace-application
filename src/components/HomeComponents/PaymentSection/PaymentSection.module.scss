@@ -14,6 +14,7 @@
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
+
       h2 {
         color: $home-blue-background;
         font-family: Poppins;
@@ -37,6 +38,25 @@
       }
     }
 
+    &CardPriceHeader {
+      @extend .paymentCardHeader !optional;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 59px;
+      h2 {
+        width: 50%;
+      }
+
+      div {
+        width: max-content;
+        height: 100%;
+        padding: 10px;
+        color: white;
+      }
+    }
+
     &CardsContainer {
       display: flex;
       flex-direction: row;
@@ -57,6 +77,17 @@
           align-items: flex-start;
           gap: 6px;
         }
+        .checkNameContainerPrice {
+          @extend .checkNameContainer !optional;
+          p {
+            color: $home-blue-background;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%; /* 19.2px */
+          }
+        }
       }
 
       .paymentCard {
@@ -66,13 +97,33 @@
         padding: 38.263px 124.354px 51.307px 59.133px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 36.523px;
+        gap: 59px;
         border-radius: 15px;
         background: #fff;
         box-shadow: 33.045px 29.567px 18.262px 0px rgba(0, 0, 0, 0),
           18.262px 16.522px 14.783px 0px rgba(0, 0, 0, 0.02),
           8.696px 7.826px 11.305px 0px rgba(0, 0, 0, 0.03),
           1.739px 1.739px 6.087px 0px rgba(0, 0, 0, 0.03);
+        p {
+          color: #656565;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 120%; /* 19.2px */
+        }
+      }
+      .paymentCardPrice {
+        @extend .paymentCardBase !optional;
+        width: 434.802px;
+        border-radius: 15px;
+        background: rgba(0, 190, 204, 0.1);
+        box-shadow: 52px 47px 20px 0px rgba(0, 0, 0, 0),
+          33px 30px 18px 0px rgba(0, 0, 0, 0),
+          19px 17px 15px 0px rgba(0, 0, 0, 0.02),
+          8px 7px 11px 0px rgba(0, 0, 0, 0.03),
+          2px 2px 6px 0px rgba(0, 0, 0, 0.03);
+        padding: 38.26px 37.36px 51.31px 44.35px;
       }
     }
   }

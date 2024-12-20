@@ -1,11 +1,14 @@
 import Image from "next/image";
+
 //styles
 import styles from "./PaymentSection.module.scss";
-import SectionTitle from "@/components/ui/SectionTitle";
 
 //icons
 import checklistTrue from "@/../public/icons/payment/checkbarTrue.svg";
 import checklistFalse from "@/../public/icons/payment/checkbarFalse.svg";
+
+//components
+import SectionTitle from "@/components/ui/SectionTitle";
 
 const paymentTitleSection = {
   title: "PAYMENT",
@@ -63,10 +66,23 @@ const PaymentSection = () => {
         description={paymentTitleSection.descriptionText}
         textColor="blue"
       />
+
+      {/*           Payment cards                  */}
       <div className={styles.paymentCardsContainer}>
         {paymentSectionCardsInfo.map((paymentCard) => (
-          <div key={paymentCard.id} className={styles.paymentCard}>
-            <div className={styles.paymentCardHeader}>
+          <div
+            key={paymentCard.id}
+            className={
+              paymentCard.price ? styles.paymentCardPrice : styles.paymentCard
+            }
+          >
+            <div
+              className={
+                paymentCard.price
+                  ? styles.paymentCardPriceHeader
+                  : styles.paymentCardHeader
+              }
+            >
               <h2>{paymentCard.title}</h2>
               {paymentCard.price && (
                 <div>
@@ -78,7 +94,11 @@ const PaymentSection = () => {
               {checkListItems.map((checkListItem) => (
                 <li
                   key={checkListItem.id}
-                  className={styles.checkNameContainer}
+                  className={
+                    paymentCard.price
+                      ? styles.checkNameContainerPrice
+                      : styles.checkNameContainer
+                  }
                 >
                   {paymentCard.checkListIds.includes(checkListItem.id) ? (
                     <Image
