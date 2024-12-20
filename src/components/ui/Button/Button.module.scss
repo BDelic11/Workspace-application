@@ -1,0 +1,45 @@
+//global imports
+@import "../../../styles/global.colors.scss";
+@import "../../../styles/global.fonts.scss";
+
+.buttonContainer {
+  .button {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    letter-spacing: 1.22px;
+    text-transform: uppercase;
+    display: flex;
+    width: 147px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    &.primary {
+      border-radius: 50px;
+      background: $primary-button-color;
+      color: $black-color;
+      box-shadow: 0px 6px 32px 0px rgba(255, 224, 70, 0.16);
+    }
+
+    &.secondary {
+      background-color: $secondary-button-color;
+      color: $black-color;
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      color: #fff;
+      border: 2px solid #ccc;
+      cursor: not-allowed;
+    }
+  }
+  &:hover {
+    color: $primary-button-color-hover;
+  }
+}

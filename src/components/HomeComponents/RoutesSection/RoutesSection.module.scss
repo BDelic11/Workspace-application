@@ -1,0 +1,33 @@
+@import "../../../styles/global.colors.scss";
+@import "../../../styles/mixins";
+
+//DESKTOP
+@include desktop() {
+  .experienceSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+    .cardsContainer {
+      margin-top: 125px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-inline: auto;
+      gap: 78px;
+      width: 100%;
+      margin-bottom: 264px;
+    }
+  }
+}
+
+//MOBILE
+@include mobile() {
+  .experienceSection {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,121 @@
+// $fontPath: '../../public/fonts/';
+
+// @mixin font-face($family, $file, $weight: normal, $style: normal) {
+//   @font-face {
+//     font-family: $family;
+//     src: url('#{$fontPath}#{$file}.ttf') format('truetype');
+//     font-weight: $weight;
+//     font-style: $style;
+//   }
+// }
+
+// @include font-face("Poppins", 700, normal);
+// @include font-face('Manrope-Regular', 'Manrope-Regular');
+// @include font-face('Manrope-Light', 'Manrope-Light');
+// @include font-face('Manrope-ExtraBold', 'Manrope-ExtraBold', 800, normal);
+// @include font-face('Manrope-Medium', 'Manrope-Medium', 500, normal);
+// @include font-face('Manrope-ExtraLight', 'Manrope-ExtraLight', 100, normal);
+// @include font-face('Manrope-SemiBold', 'Manrope-SemiBold', 600, normal);
+
+// @mixin LogoH2Mixin {
+//   font-family: 'Manrope-ExtraLight';
+//   font-size: 1em;
+//   line-height: 1.2;
+// }
+
+// @mixin TitleH2Mixin {
+//   font-family: 'Manrope-Bold';
+//   font-size: 18px;
+//   line-height: 1.2;
+//   color: $dark-gray-text-color;
+// }
+
+// @mixin BoldDark16Mixin {
+//   font-family: 'Manrope-Bold';
+//   font-size: 16px;
+//   line-height: 1.2;
+//   color: $dark-gray-text-color;
+// }
+// @mixin ExtraBoldDark16Mixin {
+//   font-family: 'Manrope-ExtraBold';
+//   font-size: 16px;
+//   line-height: 1.2;
+//   color: $dark-gray-text-color;
+// }
+
+// @mixin MediumLight12Mixin {
+//   font-family: 'Manrope-Medium';
+//   font-size: 12px;
+//   line-height: 1.2;
+//   color: $light-gray-text-color;
+// }
+
+// @mixin MediumLight14Mixin {
+//   font-family: 'Manrope-Medium';
+//   font-size: 14px;
+//   line-height: 1.2;
+//   color: $light-gray-text-color;
+// }
+
+// @mixin MediumRegular14Mixin {
+//   font-family: 'Manrope-Regular';
+//   font-size: 14px;
+//   line-height: 1.2;
+//   color: $light-gray-text-color;
+// }
+
+// @mixin RegularLight12Mixin {
+//   font-family: 'Manrope-Regular';
+//   font-size: 12px;
+//   line-height: 1.2;
+//   color: $light-gray-text-color;
+// }
+
+// @mixin MediumRegular24Mixin {
+//   font-family: 'Manrope-Regular';
+//   font-size: 24px;
+//   line-height: 1.2;
+//   color: $dark-gray-text-color;
+// }
+
+// @mixin MediumDark14Mixin {
+//   font-family: 'Manrope-Medium';
+//   font-size: 14px;
+//   line-height: 1.2;
+//   color: $dark-gray-text-color;
+// }
+
+// @mixin MediumGreen11Mixin {
+//   font-family: 'Manrope-Medium';
+//   font-size: 11px;
+//   line-height: 1.2;
+//   color: $green-text-color;
+// }
+
+// @mixin MediumRed11Mixin {
+//   font-family: 'Manrope-Medium';
+//   font-size: 11px;
+//   line-height: 1.2;
+//   color: $red-text-color;
+// }
+
+// @mixin SemiLight12Mixin {
+//   font-family: 'Manrope-SemiBold';
+//   font-size: 12px;
+//   line-height: 1.2;
+//   color: $light-gray-text-color;
+// }
+
+// @mixin SemiBoldDark16Mixin {
+//   font-family: 'Manrope-SemiBold';
+//   font-size: 16px;
+//   line-height: 1.2;
+//   color: $dark-gray-text-color;
+// }
+
+// @mixin SemiBoldDark14Mixin {
+//   font-family: 'Manrope-SemiBold';
+//   font-size: 14px;
+//   line-height: 1.2;
+//   color: $dark-gray-text-color;
+// }

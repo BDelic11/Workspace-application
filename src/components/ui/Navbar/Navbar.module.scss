@@ -1,0 +1,94 @@
+//global imports
+@import "../../../styles/global.colors.scss";
+@import "../../../styles/mixins";
+
+//DESKTOP
+@include desktop() {
+  .navbar {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $white-color;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 40px;
+
+    &Image,
+    &Link,
+    &RightSide {
+      z-index: 2;
+    }
+
+    &RightSide {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &LogIn {
+      color: $white-color;
+      text-align: center;
+      font-family: var(--font-poppins);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%; /* 24px */
+    }
+
+    &Link {
+      width: max-content;
+    }
+
+    &Shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 141px;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.32) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+
+    ul {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      gap: 32px;
+      width: max-content;
+      z-index: 2;
+
+      li:hover {
+        color: rgb(67, 67, 67);
+        transition: all;
+        transition-duration: 300ms;
+        transition-delay: 30ms;
+      }
+    }
+  }
+}
+
+//MOBILE
+@include mobile() {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-inline: 24px;
+  }
+}

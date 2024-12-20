@@ -1,0 +1,60 @@
+@import "../../../styles/global.colors.scss";
+@import "../../../styles/mixins";
+
+//DESKTOP
+@include desktop() {
+  .card {
+    width: 271px;
+    height: 370px;
+    border-radius: 10.435px;
+    position: relative;
+    z-index: 1;
+    :hover {
+      transition: all;
+      transition-duration: 300ms;
+      transition-delay: 40ms;
+      cursor: pointer;
+      filter: brightness(0.7);
+    }
+
+    &Image {
+      border-radius: 10.435px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &Title {
+      z-index: 3;
+      position: absolute;
+      top: 17.74px;
+      left: 28.17px;
+      color: #fff;
+      font-feature-settings: "liga" off, "clig" off;
+      font-family: Poppins;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%; /* 31.2px */
+    }
+
+    &Shadow {
+      z-index: 2;
+      position: absolute;
+      border-radius: 10.435px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 153.397px;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0) 24.89%,
+        rgba(0, 0, 0, 0.5) 97.56%
+      );
+    }
+  }
+}
+
+//MOBILE
+@include mobile() {
+}

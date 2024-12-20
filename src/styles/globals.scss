@@ -1,0 +1,74 @@
+// @import "swiper/scss";
+@import "../styles/global.colors.scss";
+@import "../styles/mixins";
+
+:root {
+  overflow-x: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+  text-align: unset;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  font-weight: normal;
+}
+
+input {
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  font-family: var(--font-poppins);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
